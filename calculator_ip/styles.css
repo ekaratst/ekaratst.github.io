@@ -1,0 +1,39 @@
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 40px;
+  }
+  
+  div.form-group.subnet select.form-control{
+    width:250px;
+  }
+  
+  div.form-group.ip-addr input.form-control{
+    width:250px;
+  }
+  
+  div.form-group.network-class span:not(:first-child){
+    margin-left:10px;
+  }
+  
+  div.form-col{
+    height:40px;
+    line-height:40px;
+  }
+  
+  div.submit{
+    text-align:center;
+  }
+  
+  div.panel.inputs{
+    margin-top:10px;
+  }
+  
+  input[type="radio"]{
+    margin-top:12px;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-top: 20px;
+}
