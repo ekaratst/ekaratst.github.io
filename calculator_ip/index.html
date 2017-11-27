@@ -1,1 +1,180 @@
-ip_calculator
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Calculator</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="panel panel-default inputs">
+                    <div class="panel-body">
+                        <form>
+                            <!-- <div class="form-group network-class">
+                                <div class="row">
+                                    <div class="col-sm-3 form-col">
+                                        <label class="control-label">Network Class</label>
+                                    </div>
+                                    <div class="col-sm-6 form-col">
+                                        <span>
+                                            <label class="control-label radio-inline">
+                                                <input type="radio" name="class" checked value="any">Any</label>
+                                        </span>
+                                        <span>
+                                            <label class="control-label radio-inline">
+                                                <input type="radio" name="class" value="A">A</label>
+                                        </span>
+                                        <span>
+                                            <label class="control-label radio-inline">
+                                                <input type="radio" name="class" value="B">B</label>
+                                        </span>
+                                        <span>
+                                            <label class="control-label radio-inline">
+                                                <input type="radio" name="class" value="C">C</label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="form-group subnet">
+                                <div class="row">
+                                    <div class="col-sm-3 form-col">
+                                        <label class="control-label">Subnet </label>
+                                    </div>
+                                    <div class="col-sm-6 form-col">
+                                        <select class="form-control subnet" name="subnet"></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group ip-addr">
+                                <div class="row">
+                                    <div class="col-sm-3 form-col">
+                                        <label class="control-label">IP Address</label>
+                                    </div>
+                                    <div class="col-sm-6 form-col">
+                                        <input class="form-control" type="text" name="ip">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row error-msg hide">
+                                <div class="col-md-12" style="text-align: center;">
+                                    <span style="color: red;">Please provide a valid IP address.</span>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 submit">
+                                    <button class="btn btn-default btn-primary" type="submit">Calculate </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 result-wrapper hide">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>IP Address</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Network Address</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Usable Host IP Range</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Broadcast Address</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Total Number of Hosts</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Number of Usable Hosts</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Subnet Mask</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Wildcard Mask</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Binary Subnet Mask</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>IP Class</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>CIDR Notation</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>IP Type</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Short</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Binary ID</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Integer ID</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Hex ID</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-md-12 all-networks hide">
+                    <h3 id="table-title"></h3>
+                    <table style="width: 100%;" class="table">
+                        <thead>
+                            <tr>
+                                <th>Network Address</th>
+                                <th>Usable Host Range</th>
+                                <th>Broadcast Address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="calculate.js"></script>
+
+</body>
+
+</html>
