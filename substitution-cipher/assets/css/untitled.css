@@ -31,14 +31,12 @@ textarea.input_source{
   width:50%;
   height:150px;
   font-size:medium;
-  font-family:cursive;
 }
 
 textarea.output_result{
   width:50%;
   height:150px;
   font-size:medium;
-  font-family:cursive;
 }
 
 div.col-md-1.col-xs-4.col_dropdown{
