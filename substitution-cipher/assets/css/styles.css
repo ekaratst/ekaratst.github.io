@@ -1,0 +1,171 @@
+div.border_tansformation{
+  height:auto;
+  width:auto;
+  margin:50px 10% 0 10%;
+  border-style:solid;
+  border-color:#FFA07A;
+  border-width:5px;
+  border-radius:20px;
+  padding-bottom:5%;
+}
+
+div.border_source_text{
+  height:300px;
+  width:auto;
+  margin:50px 10% 0 10%;
+  border-style:solid;
+  border-color:#FFA07A;
+  border-width:5px;
+  border-radius:20px;
+}
+
+div.border_result_text{
+  height:300px;
+  width:auto;
+  margin:50px 10% 5% 10%;
+  border-style:solid;
+  border-color:#FFA07A;
+  border-width:5px;
+  border-radius:20px;
+}
+
+h1.heading_name{
+  text-align:center;
+}
+
+div.inter_border{
+  background-color:#000;
+  height:50px;
+}
+
+div.output{
+  height:100px;
+}
+
+div.B{
+  white-space:nowrap;
+  overflow:hidden;
+  width:100px;
+}
+
+span.aaa{
+  white-space:nowrap;
+}
+
+div.radio.text_shift{
+  padding-left:35px;
+}
+
+div.radio.text_substitution{
+  padding-left:35px;
+}
+
+li.1{
+  text-align:center;
+}
+
+.open > .dropdown-menu{
+  display:block;
+  text-align:center;
+  min-width:2%;
+}
+
+.dropdown-menu{
+  position:absolute;
+  top:100%;
+  left:0;
+  z-index:1000;
+  display:none;
+  float:left;
+  min-width:160px;
+  padding:5px 0;
+  margin:2px 0 0;
+  font-size:14px;
+  text-align:left;
+  list-style:none;
+  background-color:#fff;
+  -webkit-background-clip:padding-box;
+  background-clip:padding-box;
+  border:1px solid #ccc;
+  border:1px solid rgba(0,0,0,.15);
+  border-radius:4px;
+  -webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);
+  box-shadow:0 6px 12px rgba(0,0,0,.175);
+  height:auto;
+  max-height:350px;
+  overflow-x:hidden;
+}
+
+div.dropdown.dropdown_alphabet{
+}
+
+div.col-md-1.col_alphabet{
+}
+
+div.row_div{
+  text-align:center;
+}
+
+div.div_alphabet{
+  width:40px;
+  display:inline-block;
+  margin-top:8px;
+}
+
+div.div_dropdown_alphabet{
+  width:auto;
+  display:inline-block;
+}
+
+div.box_group_alphabet{
+  width:auto;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  display:inline-block;
+}
+
+div.div_source{
+  text-align:center;
+  margin:10px 0 15px 0;
+}
+
+div.div-container{
+  width:200px;
+  height:100px;
+  margin:20px auto 0;
+  -webkit-perspective:1000;
+  -webkit-backface-visibility:hidden;
+}
+
+button.btn.btn-default.encode-decode-button{
+  position:relative;
+  top:50%;
+  left:50%;
+  margin-left:-50px;
+  margin-top:-50px;
+  display:block;
+  width:100px;
+  height:100px;
+  font-size:1.3em;
+  font-weight:lighter;
+  font-family:'Trebuchet MS', sans-serif;
+  text-transform:uppercase;
+  text-align:center;
+  line-height:100px;
+  letter-spacing:-1px;
+  color:white;
+  border:none;
+  border-radius:50%;
+  background:#5a99d4;
+  cursor:pointer;
+  -webkit-animation:pulse 1.5s infinite;
+}
+
+.encode-decode-button:hover{
+  -webkit-animation:none;
+}
+
+@-webkit-keyframes pulse{
+}
+

@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>substitution</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body>
+    <h1 class="text-warning heading_name">Substitution Cipher - Encoding/Decoding </h1>
+    <div class="border_tansformation">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
+                <div class="radio text_shift">
+                    <label>
+                        <input type="radio">Julius Caesar Cipher - shifting:</label>
+                </div>
+            </div>
+            <div class="col-md-1 col-xs-4 col_dropdown">
+                <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"> 0 <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation"><a href="#">1 </a></li>
+                        <li role="presentation"><a href="#">2 </a></li>
+                        <li role="presentation"><a href="#">3 </a></li>
+                        <li role="presentation"><a href="#">4 </a></li>
+                        <li role="presentation"><a href="#">5 </a></li>
+                        <li role="presentation"><a href="#">6 </a></li>
+                        <li role="presentation"><a href="#">7 </a></li>
+                        <li role="presentation"><a href="#">8 </a></li>
+                        <li role="presentation"><a href="#">9 </a></li>
+                        <li role="presentation"><a href="#">10 </a></li>
+                        <li role="presentation"><a href="#">11 </a></li>
+                        <li role="presentation"><a href="#">12 </a></li>
+                        <li role="presentation"><a href="#">13 </a></li>
+                        <li role="presentation"><a href="#">14 </a></li>
+                        <li role="presentation"><a href="#">15 </a></li>
+                        <li role="presentation"><a href="#">16 </a></li>
+                        <li role="presentation"><a href="#">17 </a></li>
+                        <li role="presentation"><a href="#">18 </a></li>
+                        <li role="presentation"><a href="#">19 </a></li>
+                        <li role="presentation"><a href="#">20 </a></li>
+                        <li role="presentation"><a href="#">21 </a></li>
+                        <li role="presentation"><a href="#">22 </a></li>
+                        <li role="presentation"><a href="#">23 </a></li>
+                        <li role="presentation"><a href="#">24 </a></li>
+                        <li role="presentation"><a href="#">25 </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-6 col-xs-10">
+                <div class="radio text_substitution">
+                    <label>
+                        <input type="radio">Simple Substitution Cipher</label>
+                </div>
+            </div>
+        </div>
+        <div class="row_div">
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>A =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">A <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>B =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">B <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>C =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">C <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>D =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">D <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>E =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">E <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>F =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">F <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>G =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">G <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>H =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">H <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row_div">
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>I =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">I <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>J =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">J <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>K =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">K <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>L =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">L <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>M =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">M <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>N =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">N <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>O =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">O <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>P =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">P <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row_div">
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>Q =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Q <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>R =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">R <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>S =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">S <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>T =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">T <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>U =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">U <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>V =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">V <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>W =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">W <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>X =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">X <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row_div">
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>Y =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Y <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_group_alphabet">
+                <div class="div_alphabet"><span>Z =&gt;</span></div>
+                <div class="div_dropdown_alphabet">
+                    <div class="dropdown">
+                        <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Z <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" id="character-a">A </a></li>
+                            <li role="presentation"><a href="#" id="character-b">B </a></li>
+                            <li role="presentation"><a href="#" id="character-c">C </a></li>
+                            <li role="presentation"><a href="#" id="character-d">D </a></li>
+                            <li role="presentation"><a href="#" id="character-e">E </a></li>
+                            <li role="presentation"><a href="#" id="character-f">F </a></li>
+                            <li role="presentation"><a href="#" id="character-g">G </a></li>
+                            <li role="presentation"><a href="#" id="character-h">H </a></li>
+                            <li role="presentation"><a href="#" id="character-i"> I </a></li>
+                            <li role="presentation"><a href="#" id="character-j">J </a></li>
+                            <li role="presentation"><a href="#" id="character-k">K </a></li>
+                            <li role="presentation"><a href="#" id="character-l">L </a></li>
+                            <li role="presentation"><a href="#" id="character-m">M </a></li>
+                            <li role="presentation"><a href="#" id="character-n">N </a></li>
+                            <li role="presentation"><a href="#" id="character-o">O </a></li>
+                            <li role="presentation"><a href="#" id="character-p">P </a></li>
+                            <li role="presentation"><a href="#" id="character-q">Q </a></li>
+                            <li role="presentation"><a href="#" id="character-r">R </a></li>
+                            <li role="presentation"><a href="#" id="character-s">S </a></li>
+                            <li role="presentation"><a href="#" id="character-t">T </a></li>
+                            <li role="presentation"><a href="#" id="character-u">U </a></li>
+                            <li role="presentation"><a href="#" id="character-v">V </a></li>
+                            <li role="presentation"><a href="#" id="character-w">W </a></li>
+                            <li role="presentation"><a href="#" id="character-x">X </a></li>
+                            <li role="presentation"><a href="#" id="character-y">Y </a></li>
+                            <li role="presentation"><a href="#" id="character-z">Z </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border_source_text">
+        <div class="div_source"><span class="text-warning"><strong>Source text</strong> </span></div>
+        <div class="div_input">
+            <textarea class="input_source"></textarea>
+        </div>
+        <div class="div-button">
+            <button class="btn btn-success" type="button">Decode/Encode </button>
+        </div>
+    </div>
+    <div class="border_result_text">
+        <div class="div_result"><span class="text-warning"><strong>Result</strong> </span></div>
+        <div class="div_output">
+            <textarea readonly="" class="output_result"></textarea>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
