@@ -5,17 +5,17 @@ function initJulius(elementId) {
 }
 
 function initSimpleSubCipher(elementId) {
-    var a_ascii = 'a'.charCodeAt(0);
+    var A_ascii = 'A'.charCodeAt(0);
     var $alphabetsOption = $('<select class="form-control alphabet-select" style="width: 60px; display: inline-block;"></select>');
     for (var i = 0; i < 26; i++) {
-        $alphabetsOption.append('<option value="' + String.fromCharCode(a_ascii + i) + '">' + String.fromCharCode(a_ascii + i) + '</option>');
+        $alphabetsOption.append('<option value="' + String.fromCharCode(A_ascii + i) + '">' + String.fromCharCode(A_ascii + i) + '</option>');
     }
     var $row = $('<div class="row"></div>');
     for (var i = 0; i < 26; i++) {
         var $div = $('<div class="col-xs-3" ></div>');
-        $div.append('<div style="width: 40px; display: inline-block;">' + String.fromCharCode(a_ascii + i) + ' =&gt; </div>');
+        $div.append('<div style="width: 40px; display: inline-block;">' + String.fromCharCode(A_ascii + i) + ' =&gt; </div>');
         $div.append($alphabetsOption.clone());
-        $div.find('select').attr('id', 'alphabet' + String.fromCharCode(a_ascii + i))
+        $div.find('select').attr('id', 'alphabet' + String.fromCharCode(A_ascii + i))
         $row.append($div);
         if ((i+1) % 4 == 0 && i !== 0) {
             $('#' + elementId).append($row);
@@ -34,10 +34,10 @@ $(document).ready(function() {
             var shiftAmout = Number($('#julius-caesar-select').val());
             var result = caesarShift(inputText, shiftAmout);
         } else {
-            var a_ascii = 'a'.charCodeAt(0);
+            var A_ascii = 'A'.charCodeAt(0);
             var map = {};
             for (var i = 0; i < 26; i++) {
-                map[String.fromCharCode(a_ascii + i)] = $('#alphabet'+String.fromCharCode(a_ascii + i)).val();
+                map[String.fromCharCode(A_ascii + i)] = $('#alphabet'+String.fromCharCode(A_ascii + i)).val();
             }
             var result = substitution(inputText, map);
         }
