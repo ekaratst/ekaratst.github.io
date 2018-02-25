@@ -17,22 +17,18 @@
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
                 <div class="radio text_shift">
                     <label>
-                        <input type="radio" name="method" checked>Julius Caesar Cipher - shifting:</label>
+                        <input type="radio" name="method" checked id="julius-checkbox">Julius Caesar Cipher - shifting:</label>
                 </div>
             </div>
             <div class="col-md-1 col-xs-4 col_dropdown">
-                <div class="dropdown">
-                    <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"> 0 <span class="caret"></span></button>
-                    <ul class="dropdown-menu" role="menu" id="julius-caesar-select">
-                    </ul>
-                </div>
+                <select class="form-control" id="julius-caesar-select"></select>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 col-sm-6 col-xs-10">
                 <div class="radio text_substitution">
                     <label>
-                        <input type="radio" name="method">Simple Substitution Cipher</label>
+                        <input type="radio" name="method" id="simple-checkbox">Simple Substitution Cipher</label>
                 </div>
             </div>
         </div>
@@ -50,7 +46,7 @@
             <textarea class="input_source"></textarea>
         </div>
         <div class="div-button">
-            <button class="btn btn-success" type="button">Decode/Encode </button>
+            <button class="btn btn-success" type="button" id="encode">Decode/Encode </button>
         </div>
     </div>
     <div class="border_result_text">
@@ -61,6 +57,7 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/function.js"></script>
     <script src="assets/js/initial.js"></script>
 </body>
 
