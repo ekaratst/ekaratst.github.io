@@ -5,9 +5,9 @@ function caesarShift(input, amount) {
 		if (str.match(/[a-z]/i)) {
 			var code = input.charCodeAt(i);
 			if ((code >= 65) && (code <= 90))
-				str = inputing.fromCharCode(((code - 65 + amount) % 26) + 65);
+				str = input.fromCharCode(((code - 65 + amount) % 26) + 65);
 			else if ((code >= 97) && (code <= 122))
-				str = inputing.fromCharCode(((code - 97 + amount) % 26) + 97);
+				str = input.fromCharCode(((code - 97 + amount) % 26) + 97);
 		}
 		output += str;
 	}
