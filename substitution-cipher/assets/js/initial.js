@@ -13,7 +13,7 @@ function initSimpleSubCipher(elementId) {
     var $row = $('<div class="row"></div>');
     for (var i = 0; i < 26; i++) {
         var $div = $('<div class="col-xs-3" ></div>');
-        $div.append('<span>' + String.fromCharCode(A_ascii + i) + ' =&gt; </span>');
+        $div.append('<div style="width: 40px; display: inline-block;">' + String.fromCharCode(A_ascii + i) + ' =&gt; </div>');
         $div.append($alphabetsOption.clone());
         $div.find('select').attr('name', 'alphabet' + String.fromCharCode(A_ascii + i))
         $row.append($div);
