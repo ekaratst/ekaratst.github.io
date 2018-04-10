@@ -30,6 +30,26 @@ body {
   text-decoration: none;
 }
 
+/* Rerun */
+.rerun {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.rerun a {
+  cursor: pointer;
+  display: inline-block;
+  background: #ed2553;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.rerun a:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 /* Scroll To Bottom */
 #codepen, #portfolio {
   position: fixed;
@@ -308,7 +328,6 @@ body {
   /* Input */
   /* Button */
 }
-
 .card.alt .toggle {
   position: relative;
   background: #ed2553;
@@ -333,7 +352,6 @@ body {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
-
 .card.alt .title,
 .card.alt .input-container,
 .card.alt .button-container {
